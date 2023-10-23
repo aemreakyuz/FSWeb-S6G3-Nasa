@@ -8,7 +8,9 @@ const API_KEY = "5KZUoJqsYvq1eYr7SttuqYkEJjhxQQ0PAfIQrjfX";
 function App() {
   const [nasaData, setNasaData] = useState(null);
   const [error, setError] = useState(null);
-  const [selectedDate, setSelectedDate] = useState("2020-07-22");
+  const today = new Date();
+  const formattedToday = today.toISOString().split("T")[0];
+  const [selectedDate, setSelectedDate] = useState(formattedToday);
 
   useEffect(() => {
     axios
