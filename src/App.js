@@ -24,7 +24,7 @@ function App() {
         console.log(err);
         setError(err.response.data.msg);
       });
-  }, []);
+  }, [selectedDate]);
 
   return (
     <div className="App">

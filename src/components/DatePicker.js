@@ -12,7 +12,7 @@ function DatePicker(props) {
       <input
         name="start"
         type="date"
-        value={props.val}
+        value={props.value}
         onChange={(e) => changeHandler(e)}
       />
     </>
